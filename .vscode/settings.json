@@ -8,11 +8,14 @@
     "commitlint",
     "hookform",
     "ianvs",
+    "nextjs",
     "prettiercache",
     "shadcn",
     "sonner",
     "tailwindcss",
+    "trpc",
     "tsbuildinfo",
+    "Turborepo",
     "typecheck"
   ]
 }
