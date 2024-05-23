@@ -1,0 +1,40 @@
+{
+  "name": "ifc-starter",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "turbo format",
+    "prepare": "husky install",
+    "lint-staged": "lint-staged",
+    "lint:ws": "pnpm dlx sherif@latest",
+    "lint:ws:fix": "pnpm dlx sherif@latest --fix"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "lint-staged": {
+    "(apps|packages)/**/*.{js,ts,jsx,tsx}": [
+      "prettier --write . --ignore-path ../../.gitignore"
+    ]
+  },
+  "devDependencies": {
+    "@acme/eslint-config": "workspace:*",
+    "@acme/typescript-config": "workspace:*",
+    "prettier": "^3.2.5",
+    "turbo": "latest",
+    "@commitlint/cli": "^19.2.1",
+    "@commitlint/config-conventional": "^19.1.0",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.2.2"
+  },
+  "packageManager": "pnpm@9.1.0",
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ],
+  "cSpell.words": [
+    "commitlint",
+    "hookform",
+    "ianvs",
+    "prettiercache",
+    "shadcn",
+    "sonner",
+    "tailwindcss",
+    "tsbuildinfo",
+    "typecheck"
+  ]
+}
